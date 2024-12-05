@@ -1,90 +1,68 @@
-//
-//  HomescreenView.swift
-//  ExploreHere
-//
-//  Created by William Souef on 23/08/2022.
-//
-
 import SwiftUI
 
 struct Homescreen: View {
-  
     @State private var OnboardingScreenIsShowing = false
-    @State private var ListScreenisShowing = false
-    @State private var IconViewIsShowing = false 
-  
+    @State private var IconViewIsShowing = false
     
     var body: some View {
-       
-    
-        ZStack {
-            ScrollView {
-            
-            VStack(alignment: .leading, spacing: 0){
-                HStack{
-                    TitleHome(title: "WELCOME,")
-                        .padding()
-                        .padding()
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                HStack {
+                    TitleHome(title: "WELCOME TO HONG KONG,")
+                        .padding(.leading)
                     
                     Button(action:{
                         withAnimation{
                             OnboardingScreenIsShowing = true
                         }
-                    }){
+                    }) {
                         RoundViews(systemName: "info")
-                    }.sheet(isPresented: $OnboardingScreenIsShowing, onDismiss: {}, content: {
-                        OnboardingScreen(OnboardingScreenIsShowing: $OnboardingScreenIsShowing)
-                    })
-                }
-                
-                VStack{
-                    HStack{
-                        
-                        UserView(username: "WILLIAM SOUEF !")
-                            .padding()
-                            .padding()
-                        
                     }
-                    Spacer()
+                    .sheet(isPresented: $OnboardingScreenIsShowing) {
+                        OnboardingScreen(OnboardingScreenIsShowing: $OnboardingScreenIsShowing)
+                    }
                 }
-            }.padding(.leading)
-            
-            Button(action:{
-                withAnimation{
-                  IconViewIsShowing = true
-                }
-            }){
-                Image("iphone120")
-                    .resizable()
-                    .aspectRatio(contentMode:.fit)
-                    .frame(width: Constants.General.imageWidth,   height: Constants.General.imageHeight)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color("TitleBackgroundColor"), lineWidth: Constants.General.lineWidth))
                 
-            }.sheet(isPresented: $IconViewIsShowing, onDismiss: {}, content: {
-                IconView(IconViewIsShowing:$IconViewIsShowing)
+                VStack(alignment: .leading, spacing: 10) {
+                    UserView(username: "Explore the best hotels in Hong Kong!")
                     
-            })
-            
-        }
-               }
+                    Text("Discover exclusive hotel deals and activities tailored for you.")
+                        .font(.headline)
+                        .foregroundColor(.white)
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal)
+                }
+                .padding()
+                .background(Color.black.opacity(0.3))
+                .cornerRadius(10)
+                .padding(.horizontal)
                 
+                Button(action:{
+                    withAnimation{
+                        IconViewIsShowing = true
+                    }
+                }){
+                    Image("iphone120")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 100, height: 100)
+                        .clipShape(Circle())
+                        .overlay(Circle().stroke(Color("TitleBackgroundColor"), lineWidth: Constants.General.lineWidth))
+                }
+                .sheet(isPresented: $IconViewIsShowing) {
+                    IconView(IconViewIsShowing:$IconViewIsShowing)
+                }
+                
+                // 如果需要更多内容，可以在这里添加 VStack 或 Text 等视图
+                // 确保有足够内容可滚动
             }
-}
-    
-
-
-    
-
-struct Homescreen_Previews: PreviewProvider {
-    static var previews: some View {
-        
-        Homescreen()
-            .previewInterfaceOrientation(.portrait)
-            
-        Homescreen()
-            .preferredColorScheme(.dark)
-            .previewInterfaceOrientation(.landscapeRight)
+            .padding(.vertical)
+        }
+        .background(
+            Image("hongkong_background")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .clipped()
+        )
     }
 }
-

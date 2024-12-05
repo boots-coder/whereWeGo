@@ -10,7 +10,7 @@ import SwiftUI
 struct IconView: View {
     @Binding var IconViewIsShowing : Bool
     var body: some View {
-        Text("Hello, World!")
+        Text("Hello, HONGKONG!")
     }
 }
 

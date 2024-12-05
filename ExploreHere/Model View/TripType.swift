@@ -1,9 +1,3 @@
-//
-//  TripType.swift
-//  ExploreHere
-//
-//  Created by William Souef on 25/09/2022.
-//
 
 import Foundation
 import MapKit
