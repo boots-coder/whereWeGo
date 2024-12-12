@@ -1,9 +1,4 @@
-//
-//  OnboardingView.swift
-//  ExploreHere
-//
-//  Created by William Souef on 23/08/2022.
-//
+
 
 import SwiftUI
 
@@ -53,7 +48,7 @@ struct OnboardingScreen: View {
                 
                 VStack(alignment: .center, spacing: 20.0){
                 InfoView(text: "Plan a trip with friends                     ", systemName: "checkmark.circle.fill")
-                InfoView(text: "Choose Amazing Cities to Explore   ", systemName: "checkmark.circle.fill")
+                InfoView(text: "Choose Amazing Hotels to Explore   ", systemName: "checkmark.circle.fill")
                 InfoView(text: "Share the bills with your friends        ", systemName: "checkmark.circle.fill")
                 InfoView(text: "Let us Reviews and Pictures              ", systemName: "checkmark.circle.fill")
                 }
