@@ -1,12 +1,30 @@
 import SwiftUI
+import Combine
+
+struct Hotel: Identifiable {
+    let id = UUID()
+    let name: String
+    let image: String
+    let price: Int
+}
+
 
 struct Homescreen: View {
     @State private var OnboardingScreenIsShowing = false
     @State private var IconViewIsShowing = false
-    @State private var selectedBannerIndex = 0
     
-    // 倒计时与天气数据（示例静态值，可根据需求动态更新）
-    @State private var countdown = (hours: 17, minutes: 56, seconds: 01)
+    // Banner相关
+    @State private var selectedBannerIndex = 0
+    let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
+    let bannerCount = 3
+    
+    // 正计时相关
+    @State private var startTime = Date()
+    @State private var elapsedTime = (hours: 0, minutes: 0, seconds: 0)
+    // 每秒更新一次时间
+    let timeTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    
+    // 天气示例数据
     @State private var weatherIcon = "sun.max.fill"
     @State private var temperature = "25°C"
     @State private var weatherDescription = "Sunny"
@@ -15,7 +33,7 @@ struct Homescreen: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .leading, spacing: 20) {
                 
-                // 顶部区域：欢迎标题、倒计时、天气组件与Star Ferry图片
+                // 顶部区域
                 ZStack(alignment: .topTrailing) {
                     VStack(alignment: .leading, spacing: 8) {
                         HStack {
@@ -34,17 +52,16 @@ struct Homescreen: View {
                         .padding(.horizontal)
                         .padding(.top, 10)
                         
-                        // 欢迎标题
                         Text("Welcome To HK! 🇭🇰")
                             .font(.system(size: 28, weight: .semibold))
                             .foregroundColor(.white)
                             .padding(.horizontal)
                         
-                        // 倒计时显示
+                        // 显示正计时
                         HStack(spacing: 8) {
-                            timeBox(countdown.hours)
-                            timeBox(countdown.minutes)
-                            timeBox(countdown.seconds)
+                            timeBox(elapsedTime.hours)
+                            timeBox(elapsedTime.minutes)
+                            timeBox(elapsedTime.seconds)
                         }
                         .padding(.horizontal)
                         
@@ -54,8 +71,8 @@ struct Homescreen: View {
                                 .scaledToFill()
                                 .frame(height: 200)
                                 .clipped()
-                                .opacity(0.9)  // 增加透明度
-
+                                .opacity(0.9)
+                            
                             VStack(alignment: .leading, spacing: 4) {
                                 Text("Star Ferry")
                                     .font(.system(size: 18, weight: .semibold))
@@ -71,7 +88,6 @@ struct Homescreen: View {
                         }
                     }
                     
-                    // 天气组件（右上角）
                     VStack(alignment: .trailing, spacing: 4) {
                         Image(systemName: weatherIcon)
                             .font(.system(size: 24))
@@ -91,14 +107,14 @@ struct Homescreen: View {
                 
                 // Banner区
                 TabView(selection: $selectedBannerIndex) {
-                    ForEach(1..<4) { i in
-                        Image("hongkong_banner\(i)")
+                    ForEach(0..<bannerCount, id: \.self) { i in
+                        Image("hongkong_banner\(i+1)")
                             .resizable()
                             .scaledToFill()
                             .frame(height: 200)
                             .clipped()
                             .overlay(
-                                Text("Special Offer \(i)")
+                                Text("Special Offer \(i+1)")
                                     .font(.system(size: 20, weight: .bold))
                                     .foregroundColor(.white)
                                     .padding()
@@ -113,6 +129,11 @@ struct Homescreen: View {
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
                 .frame(height: 200)
                 .padding(.horizontal)
+                .onReceive(timer) { _ in
+                    withAnimation {
+                        selectedBannerIndex = (selectedBannerIndex + 1) % bannerCount
+                    }
+                }
                 
                 // 推荐酒店列表
                 Text("Recommended Hotels")
@@ -174,9 +195,17 @@ struct Homescreen: View {
             endPoint: .bottomTrailing)
             .blur(radius: 2)
         )
+        // 接收每秒定时器触发，计算已过时间
+        .onReceive(timeTimer) { _ in
+            let totalSeconds = Int(Date().timeIntervalSince(startTime))
+            let hours = totalSeconds / 3600
+            let minutes = (totalSeconds % 3600) / 60
+            let seconds = totalSeconds % 60
+            
+            elapsedTime = (hours, minutes, seconds)
+        }
     }
     
-    // 倒计时数字块
     private func timeBox(_ value: Int) -> some View {
         Text(String(format: "%02d", value))
             .font(.system(size: 20, weight: .bold))
