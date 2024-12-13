@@ -29,8 +29,8 @@
 		B3EC7ED728E0946D001E276E /* TripType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ED628E0946D001E276E /* TripType.swift */; };
 		B3EC7EDB28E0A827001E276E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EDA28E0A827001E276E /* CartView.swift */; };
 		E91797C42D0CC64400E987BC /* iOSAppSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91797C32D0CC64400E987BC /* iOSAppSessionManager.swift */; };
+		E924B0612D0CD588002E2F34 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E924B0602D0CD588002E2F34 /* CartButton.swift */; };
 		E98A62E82D0AD9DA0098D2C7 /* ExploreHereWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E98A62C52D0AD9D80098D2C7 /* ExploreHereWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E9F0458F2D003FD300A7E959 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0458E2D003FD300A7E959 /* CartButton.swift */; };
 		E9F045932D00402C00A7E959 /* PaymentButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F045922D00402C00A7E959 /* PaymentButtonView.swift */; };
 		E9F045952D00406300A7E959 /* ItemRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F045942D00406300A7E959 /* ItemRows.swift */; };
 		E9F045972D00408500A7E959 /* FavoriteButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F045962D00408500A7E959 /* FavoriteButtonView.swift */; };
@@ -100,10 +100,10 @@
 		B3EC7EDA28E0A827001E276E /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		B3EEEE8F28E6067E00807483 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E91797C32D0CC64400E987BC /* iOSAppSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppSessionManager.swift; sourceTree = "<group>"; };
+		E924B0602D0CD588002E2F34 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		E98A62C52D0AD9D80098D2C7 /* ExploreHereWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExploreHereWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98A62D42D0AD9DA0098D2C7 /* ExploreHereWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExploreHereWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98A62DE2D0AD9DA0098D2C7 /* ExploreHereWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExploreHereWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9F0458E2D003FD300A7E959 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		E9F045922D00402C00A7E959 /* PaymentButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButtonView.swift; sourceTree = "<group>"; };
 		E9F045942D00406300A7E959 /* ItemRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRows.swift; sourceTree = "<group>"; };
 		E9F045962D00408500A7E959 /* FavoriteButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButtonView.swift; sourceTree = "<group>"; };
@@ -183,8 +183,8 @@
 		B31D475F28BCF6F400A75FC1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E924B0602D0CD588002E2F34 /* CartButton.swift */,
 				B31D474228B51AF900A75FC1 /* ContentView.swift */,
-				E9F0458E2D003FD300A7E959 /* CartButton.swift */,
 				B3EC7EDA28E0A827001E276E /* CartView.swift */,
 				E9F045922D00402C00A7E959 /* PaymentButtonView.swift */,
 				E9F045942D00406300A7E959 /* ItemRows.swift */,
@@ -426,10 +426,10 @@
 				B31D474F28B5230D00A75FC1 /* Roundviews.swift in Sources */,
 				B3EC7EC628D3C744001E276E /* PlanTripModel.swift in Sources */,
 				B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */,
+				E924B0612D0CD588002E2F34 /* CartButton.swift in Sources */,
 				B3A0191F28CCDB74000D2A27 /* DetailView.swift in Sources */,
 				B3EC7EDB28E0A827001E276E /* CartView.swift in Sources */,
 				B30AA4A129AB7F3E00475AE1 /* IconView.swift in Sources */,
-				E9F0458F2D003FD300A7E959 /* CartButton.swift in Sources */,
 				E9F045952D00406300A7E959 /* ItemRows.swift in Sources */,
 				B3EC7ECA28D5DBBA001E276E /* ExperiencesButton.swift in Sources */,
 				B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */,
