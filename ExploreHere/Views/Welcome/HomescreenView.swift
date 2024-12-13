@@ -114,7 +114,7 @@ struct Homescreen: View {
                             .frame(height: 200)
                             .clipped()
                             .overlay(
-                                Text("Special Offer \(i+1)")
+                                Text("Special Activity \(i+1)")
                                     .font(.system(size: 20, weight: .bold))
                                     .foregroundColor(.white)
                                     .padding()
