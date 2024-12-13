@@ -23,7 +23,7 @@ struct DetailView: View {
         var season: Season
     }
     
-    // 模拟季节性客流量数据
+    // Simulated seasonal visitor data
     let seasonalData: [SeasonData] = [
         SeasonData(month: "Mar", visitors: 18000, season: .spring),
         SeasonData(month: "Apr", visitors: 22000, season: .spring),
@@ -41,7 +41,7 @@ struct DetailView: View {
     
     @State private var selectedSeason: Season = .spring
     
-    // 定义每日价格数据结构
+    // Define daily price data structure
     struct DailyPriceData: Identifiable {
         var id = UUID()
         var day: String
@@ -49,7 +49,7 @@ struct DetailView: View {
         var isPredicted: Bool
     }
     
-    // 模拟最近一周价格数据及后两天预测价格
+    // Simulated daily prices for the past week and predicted prices for the next two days
     let dailyPrices: [DailyPriceData] = [
         DailyPriceData(day: "Mon", price: 300, isPredicted: false),
         DailyPriceData(day: "Tue", price: 305, isPredicted: false),
@@ -82,7 +82,7 @@ struct DetailView: View {
     
     var body: some View {
         ZStack {
-            // 将地图作为背景
+            // Use map as the background
             Map(coordinateRegion: $region, annotationItems: [hotel]) { place in
                 MapMarker(coordinate: CLLocationCoordinate2D(latitude: place.latitude, longitude: place.longitude), tint: .red)
             }
@@ -90,32 +90,32 @@ struct DetailView: View {
             .edgesIgnoringSafeArea(.all)
             .allowsHitTesting(false)
             
-            // 前景内容
+            // Foreground content
             ScrollView {
                 VStack(alignment: .center, spacing: 20) {
                     
-                    // 酒店图片
+                    // Hotel image
                     Image(hotel.image)
                         .resizable()
                         .frame(width: 350, height: 350)
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                     
-                    // 酒店名称
+                    // Hotel name
                     Text(hotel.name)
                         .font(.title)
                         .fontWeight(.semibold)
                         .padding(.top, 10)
                     
-                    // 酒店描述
+                    // Hotel description
                     Text(hotel.description)
                         .tracking(-1)
                         .multilineTextAlignment(.leading)
                         .padding([.leading, .trailing], 10)
                     
-                    // 附近景点
+                    // Nearby attractions
                     if !hotel.nearbyAttractions.isEmpty {
                         VStack(alignment: .leading, spacing: 10) {
-                            Text("附近景点")
+                            Text("Nearby Attractions")
                                 .font(.headline)
                                 .padding(.bottom, 5)
                             
@@ -132,7 +132,7 @@ struct DetailView: View {
                         .padding(.top, 10)
                     }
                     
-                    // 注册按钮
+                    // Register button
                     Button(action: {
                         withAnimation {
                             hotelsList.addHotels(newItem: hotel)
@@ -150,8 +150,8 @@ struct DetailView: View {
                     }
                     .padding(.top, 20)
                     
-                    // 客流量季节变化
-                    Text("客流量季节变化")
+                    // Seasonal visitor trends
+                    Text("Seasonal Visitor Trends")
                         .font(.headline)
                         .padding(.top, 30)
                     
@@ -181,14 +181,14 @@ struct DetailView: View {
                             .padding(.bottom, 30)
                     }
                     
-                    // 价格趋势展示
-                    Text("价格趋势（过去一周及未来预测）")
+                    // Price trend display
+                    Text("Price Trends (Past Week and Future Predictions)")
                         .font(.headline)
                         .padding(.top, 30)
                     
                     if #available(iOS 16.0, *) {
                         Chart {
-                            // 实际数据的价格线
+                            // Actual price data
                             ForEach(dailyPrices) { priceData in
                                 LineMark(
                                     x: .value("Day", priceData.day),
@@ -197,13 +197,13 @@ struct DetailView: View {
                                 .foregroundStyle(priceData.isPredicted ? Color.red : Color.green)
                             }
                             
-                            // 标记预测点
+                            // Predicted points
                             ForEach(predictedPrices) { predictedDay in
                                 PointMark(
                                     x: .value("Day", predictedDay.day),
                                     y: .value("Price", predictedDay.price)
                                 )
-                                .symbol(Circle())    // 使用圆形符号
+                                .symbol(Circle()) // Use circle symbols
                                 .foregroundStyle(Color.red)
                                 .annotation {
                                     Text("Predicted")
@@ -234,4 +234,3 @@ struct DetailView_Previews: PreviewProvider {
             .environmentObject(HotelType())
     }
 }
-
