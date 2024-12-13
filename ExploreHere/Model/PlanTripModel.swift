@@ -1,9 +1,3 @@
-//
-//  PlanTripModel.swift
-//  ExploreHere
-//
-//  Created by William Souef on 15/09/2022.
-//
 
 import Foundation
 import MapKit

@@ -1,9 +1,3 @@
-//
-//  SearchBarView.swift
-//  ExploreHere
-//
-//  Created by William Souef on 22/01/2023.
-//
 
 import SwiftUI
 

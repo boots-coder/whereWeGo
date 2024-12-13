@@ -1,9 +1,4 @@
-//
-//  ExperiencesButton.swift
-//  ExploreHere
-//
-//  Created by William Souef on 17/09/2022.
-//
+
 
 import SwiftUI
 

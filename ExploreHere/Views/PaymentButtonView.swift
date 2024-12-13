@@ -1,9 +1,4 @@
-//
-//  PaymentButtonView.swift
-//  ExploreHere
-//
-//  Created by William Souef on 01/03/2023.
-//
+
 
 import SwiftUI
 import PassKit
