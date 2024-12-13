@@ -34,7 +34,7 @@ struct OnboardingScreen: View {
                     Spacer()
                     
                     
-                Image("Sydney")
+                Image("HK")
                     .resizable()
                     .aspectRatio(contentMode:.fit)
                     .frame(width: Constants.General.imageWidth,   height: Constants.General.imageHeight)
