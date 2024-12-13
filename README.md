@@ -780,21 +780,4 @@ https://designcode.io/swiftui-handbook-visual-editor-in-xcode
 5. **处理警告信息**，确保 SwiftUI 视图的稳定性和数据一致性。
 
 ### 展示
-
-
-
-<img src="https://markdown-pictures-jhx.oss-cn-beijing.aliyuncs.com/picgo/image-20241214053225556.png" alt="image-20241214053225556" style="zoom:33%;" />
-
-<img src="https://markdown-pictures-jhx.oss-cn-beijing.aliyuncs.com/picgo/image-20241214053247342.png" alt="image-20241214053247342" style="zoom: 33%;" />
-
-<img src="https://markdown-pictures-jhx.oss-cn-beijing.aliyuncs.com/picgo/image-20241214053343751.png" alt="image-20241214053343751" style="zoom:33%;" />
-
-<img src="https://markdown-pictures-jhx.oss-cn-beijing.aliyuncs.com/picgo/image-20241214053323336.png" alt="image-20241214053323336" style="zoom:33%;" />
-
-
-
-<img src="https://markdown-pictures-jhx.oss-cn-beijing.aliyuncs.com/picgo/image-20241214053458752.png" alt="image-20241214053458752" style="zoom:67%;" />
-
-<img src="https://markdown-pictures-jhx.oss-cn-beijing.aliyuncs.com/picgo/image-20241214053549795.png" alt="image-20241214053549795" style="zoom:67%;" />
-
-<img src="https://markdown-pictures-jhx.oss-cn-beijing.aliyuncs.com/picgo/image-20241214053431467.png" alt="image-20241214053431467" style="zoom:67%;" />
+见 pic-list
