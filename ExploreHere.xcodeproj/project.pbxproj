@@ -12,7 +12,6 @@
 		B31D474328B51AF900A75FC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D474228B51AF900A75FC1 /* ContentView.swift */; };
 		B31D474528B51AFA00A75FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B31D474428B51AFA00A75FC1 /* Assets.xcassets */; };
 		B31D474F28B5230D00A75FC1 /* Roundviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D474E28B5230D00A75FC1 /* Roundviews.swift */; };
-		B31D475128B5235500A75FC1 /* UserViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475028B5235500A75FC1 /* UserViews.swift */; };
 		B31D475328B523A300A75FC1 /* InfoViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475228B523A300A75FC1 /* InfoViews.swift */; };
 		B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475428B523EA00A75FC1 /* HomescreenView.swift */; };
 		B31D475728B5241400A75FC1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31D475628B5241400A75FC1 /* OnboardingView.swift */; };
@@ -29,6 +28,7 @@
 		B3EC7ED528E09059001E276E /* HotelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ED428E09059001E276E /* HotelType.swift */; };
 		B3EC7ED728E0946D001E276E /* TripType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7ED628E0946D001E276E /* TripType.swift */; };
 		B3EC7EDB28E0A827001E276E /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3EC7EDA28E0A827001E276E /* CartView.swift */; };
+		E91797C42D0CC64400E987BC /* iOSAppSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91797C32D0CC64400E987BC /* iOSAppSessionManager.swift */; };
 		E98A62E82D0AD9DA0098D2C7 /* ExploreHereWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E98A62C52D0AD9D80098D2C7 /* ExploreHereWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E9F0458F2D003FD300A7E959 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0458E2D003FD300A7E959 /* CartButton.swift */; };
 		E9F045932D00402C00A7E959 /* PaymentButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F045922D00402C00A7E959 /* PaymentButtonView.swift */; };
@@ -82,7 +82,6 @@
 		B31D474228B51AF900A75FC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B31D474428B51AFA00A75FC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B31D474E28B5230D00A75FC1 /* Roundviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roundviews.swift; sourceTree = "<group>"; };
-		B31D475028B5235500A75FC1 /* UserViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViews.swift; sourceTree = "<group>"; };
 		B31D475228B523A300A75FC1 /* InfoViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViews.swift; sourceTree = "<group>"; };
 		B31D475428B523EA00A75FC1 /* HomescreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenView.swift; sourceTree = "<group>"; };
 		B31D475628B5241400A75FC1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -100,10 +99,10 @@
 		B3EC7ED628E0946D001E276E /* TripType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripType.swift; sourceTree = "<group>"; };
 		B3EC7EDA28E0A827001E276E /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		B3EEEE8F28E6067E00807483 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E91797C32D0CC64400E987BC /* iOSAppSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppSessionManager.swift; sourceTree = "<group>"; };
 		E98A62C52D0AD9D80098D2C7 /* ExploreHereWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExploreHereWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98A62D42D0AD9DA0098D2C7 /* ExploreHereWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExploreHereWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98A62DE2D0AD9DA0098D2C7 /* ExploreHereWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExploreHereWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E98A63352D0AE90E0098D2C7 /* WatchConnectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivity.swift; sourceTree = "<group>"; };
 		E9F0458E2D003FD300A7E959 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		E9F045922D00402C00A7E959 /* PaymentButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentButtonView.swift; sourceTree = "<group>"; };
 		E9F045942D00406300A7E959 /* ItemRows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRows.swift; sourceTree = "<group>"; };
@@ -150,7 +149,6 @@
 		B31D473428B51AF900A75FC1 = {
 			isa = PBXGroup;
 			children = (
-				E98A63352D0AE90E0098D2C7 /* WatchConnectivity.swift */,
 				B3EEEE8F28E6067E00807483 /* README.md */,
 				B31D473F28B51AF900A75FC1 /* ExploreHere */,
 				E98A62C62D0AD9D80098D2C7 /* ExploreHereWatch Watch App */,
@@ -172,6 +170,7 @@
 		B31D473F28B51AF900A75FC1 /* ExploreHere */ = {
 			isa = PBXGroup;
 			children = (
+				E91797C32D0CC64400E987BC /* iOSAppSessionManager.swift */,
 				B31D474028B51AF900A75FC1 /* ExploreHere.swift */,
 				B31D474428B51AFA00A75FC1 /* Assets.xcassets */,
 				B3EC7EDE28E18C17001E276E /* Model View */,
@@ -232,7 +231,6 @@
 		B3EC7ED328D74B15001E276E /* Welcome */ = {
 			isa = PBXGroup;
 			children = (
-				B31D475028B5235500A75FC1 /* UserViews.swift */,
 				B31D475228B523A300A75FC1 /* InfoViews.swift */,
 				B31D475428B523EA00A75FC1 /* HomescreenView.swift */,
 				B31D475628B5241400A75FC1 /* OnboardingView.swift */,
@@ -433,7 +431,6 @@
 				B30AA4A129AB7F3E00475AE1 /* IconView.swift in Sources */,
 				E9F0458F2D003FD300A7E959 /* CartButton.swift in Sources */,
 				E9F045952D00406300A7E959 /* ItemRows.swift in Sources */,
-				B31D475128B5235500A75FC1 /* UserViews.swift in Sources */,
 				B3EC7ECA28D5DBBA001E276E /* ExperiencesButton.swift in Sources */,
 				B31D475528B523EA00A75FC1 /* HomescreenView.swift in Sources */,
 				B3EC7ECC28D60207001E276E /* DetailExperienceView.swift in Sources */,
@@ -441,6 +438,7 @@
 				B3AB545E297D4D920045F08B /* SearchBarView.swift in Sources */,
 				B31D475728B5241400A75FC1 /* OnboardingView.swift in Sources */,
 				E9F045972D00408500A7E959 /* FavoriteButtonView.swift in Sources */,
+				E91797C42D0CC64400E987BC /* iOSAppSessionManager.swift in Sources */,
 				B3EC7ED728E0946D001E276E /* TripType.swift in Sources */,
 				E9F045992D00409900A7E959 /* SearchBarView.swift in Sources */,
 				B31D475928B5243400A75FC1 /* Constants.swift in Sources */,

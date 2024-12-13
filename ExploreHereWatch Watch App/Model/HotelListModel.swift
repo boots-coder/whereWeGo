@@ -42,7 +42,7 @@ var hotel3 = Hotels(
     name: "香港丽思卡尔顿酒店",
     description: "位于环球贸易广场高层，可俯瞰全港景色。",
     image: "Tokyo 3",
-    suitRoom: nil,
+    suitRoom: "Yes",
     price: 350,
     nearbyAttractions: ["天际100观景台", "西九文化区", "圆方商场"],
     latitude: 22.3033,  // 丽思卡尔顿位于ICC（西九龙）
@@ -75,7 +75,7 @@ var hotel6 = Hotels(
     name: "香港W酒店",
     description: "座落于西九龙，设计风格现代年轻。",
     image: "Tokyo 6",
-    suitRoom: nil,
+    suitRoom: "Yes",
     price: 200,
     nearbyAttractions: ["Elements圆方商场", "西九龙高铁站", "西九艺术公园"],
     latitude: 22.3161,  // W酒店位于西九龙

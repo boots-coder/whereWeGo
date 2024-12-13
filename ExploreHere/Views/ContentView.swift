@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 
 struct ContentView: View {
@@ -11,7 +9,7 @@ struct ContentView: View {
     var body: some View {
         VStack{
             TabView(selection:$selection){
-             
+
                 Homescreen()
                     .tabItem {
                         Image(systemName: "house")
@@ -36,13 +34,12 @@ struct ContentView: View {
                     }
                     .tag(1)
                 CartView()
-             
-                    .tabItem{ 
+
+                    .tabItem{
                         CartButton(numberOfItems: 0)
                         Text ("Cart")
-                            
                     }
-                    .badge($hotelType.hotelComponent.count)
+                    .badge(hotelType.hotelComponent.count)
             }
             .accentColor(.blue)
         }
@@ -50,10 +47,9 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    
     static var previews: some View {
         ContentView()
             .environmentObject(TripType())
-            
+            .environmentObject(HotelType.shared) // 使用单例实例
     }
 }
