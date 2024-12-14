@@ -38,6 +38,7 @@
 		E924B0742D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-51-39.png in Resources */ = {isa = PBXBuildFile; fileRef = E924B06D2D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-51-39.png */; };
 		E924B0752D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-41-36.png in Resources */ = {isa = PBXBuildFile; fileRef = E924B06C2D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-41-36.png */; };
 		E924B0762D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-41-16.png in Resources */ = {isa = PBXBuildFile; fileRef = E924B0692D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-41-16.png */; };
+		E94113432D0DCC000052576C /* readme-ch.md in Resources */ = {isa = PBXBuildFile; fileRef = E94113422D0DCBF60052576C /* readme-ch.md */; };
 		E98A62E82D0AD9DA0098D2C7 /* ExploreHereWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E98A62C52D0AD9D80098D2C7 /* ExploreHereWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E9F045932D00402C00A7E959 /* PaymentButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F045922D00402C00A7E959 /* PaymentButtonView.swift */; };
 		E9F045952D00406300A7E959 /* ItemRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F045942D00406300A7E959 /* ItemRows.swift */; };
@@ -117,6 +118,7 @@
 		E924B06B2D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-41-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bootscoder_2024-12-14_05-41-29.png"; sourceTree = "<group>"; };
 		E924B06C2D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-41-36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bootscoder_2024-12-14_05-41-36.png"; sourceTree = "<group>"; };
 		E924B06D2D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-51-39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bootscoder_2024-12-14_05-51-39.png"; sourceTree = "<group>"; };
+		E94113422D0DCBF60052576C /* readme-ch.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "readme-ch.md"; sourceTree = "<group>"; };
 		E98A62C52D0AD9D80098D2C7 /* ExploreHereWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ExploreHereWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98A62D42D0AD9DA0098D2C7 /* ExploreHereWatch Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExploreHereWatch Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E98A62DE2D0AD9DA0098D2C7 /* ExploreHereWatch Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ExploreHereWatch Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +167,7 @@
 		B31D473428B51AF900A75FC1 = {
 			isa = PBXGroup;
 			children = (
+				E94113422D0DCBF60052576C /* readme-ch.md */,
 				E924B06E2D0CE4E9002E2F34 /* pic-list */,
 				B3EEEE8F28E6067E00807483 /* README.md */,
 				B31D473F28B51AF900A75FC1 /* ExploreHere */,
@@ -433,6 +436,7 @@
 				E924B0742D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-51-39.png in Resources */,
 				E924B0752D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-41-36.png in Resources */,
 				E924B0762D0CE4E9002E2F34 /* bootscoder_2024-12-14_05-41-16.png in Resources */,
+				E94113432D0DCC000052576C /* readme-ch.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
