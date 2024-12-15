@@ -210,6 +210,16 @@ This documentation outlines the entire development process—from initial idea a
 - [WatchConnectivity Framework Docs](https://developer.apple.com/documentation/watchconnectivity/)
 
 # 展示
+<p align="center">
+  <img src="https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-40-17.png" alt="bootscoder_2024-12-14_05-40-17" width="300px">
+  <img src="https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-40-52.png" alt="bootscoder_2024-12-14_05-40-52" width="300px">
+  <img src="https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-40-59.png" alt="bootscoder_2024-12-14_05-40-59" width="300px">
+  <img src="https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-41-16.png" alt="bootscoder_2024-12-14_05-41-16" width="300px">
+  <img src="https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-41-23.png" alt="bootscoder_2024-12-14_05-41-23" width="300px">
+  <img src="https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-41-29.png" alt="bootscoder_2024-12-14_05-41-29" width="300px">
+  <img src="https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-41-36.png" alt="bootscoder_2024-12-14_05-41-36" width="300px">
+  <img src="https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-51-39.png" alt="bootscoder_2024-12-14_05-51-39" width="300px">
+</p>
 ![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-40-17.png)
 ![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-40-52.png)
 ![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-40-59.png)
