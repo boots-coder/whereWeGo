@@ -209,4 +209,12 @@ This documentation outlines the entire development process—from initial idea a
 - [SwiftUI Tutorials by Apple](https://developer.apple.com/tutorials/swiftui/)
 - [WatchConnectivity Framework Docs](https://developer.apple.com/documentation/watchconnectivity/)
 
-# 
+# 展示
+![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-40-17.png)
+![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-40-52.png)
+![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-40-59.png)
+![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-41-16.png)
+![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-41-23.png)
+![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-41-29.png)
+![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-41-36.png)
+![描述](https://github.com/boots-coder/whereWeGo/blob/main/pic-list/bootscoder_2024-12-14_05-51-39.png)
